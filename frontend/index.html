@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/sparky.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Axios API</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="title"> Jira UTEC </h1>
+    <h2 class="subtitle"> Asesoría 3 - Semana 6</h2>
+  </header>
+
+  <main class="main">
+    <article class="post">
+      <section class="post-user">
+        <h3> Post user </h3>
+      </section>
+
+      <section class="post-task">
+        <h3> Post task </h3>
+      </section>
+    </article>
+
+    <article class="get">
+      <h2> Get tasks by User </h2>
+      <section class="get-user">
+        <label for=""> Select user </label>
+        <input type="text" id="user" placeholder="User ID">
+        <button id="get-tasks"> Get tasks </button>
+        
+        <div class="user">
+          <img src="assets/sparky.png" alt="">
+          <div>
+            <p> Nombre: Jeffrey </p>
+            <p> Email: jmonja@utec.edu.pe </p>
+            <p> Contraseña: 123456 </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-tasks" id="tasks">
+        <div class="row">
+          <div class="task-item task-header">ID</div>
+          <div class="task-item task-header">Título</div>
+          <div class="task-item task-header">Descripción</div>
+          <div class="task-item task-header">Creado</div>
+          <div class="task-item task-header">Deadline</div>
+        </div>
+
+        <!-- Filas de ejemplo -->
+        <div class="row">
+          <div class="task-item">1</div>
+          <div class="task-item">Tarea 1</div>
+          <div class="task-item">Descripción de la tarea 1</div>
+          <div class="task-item">09:00</div>
+          <div class="task-item">2024-07-01</div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
